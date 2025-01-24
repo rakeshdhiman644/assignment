@@ -1,0 +1,918 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+	--white: white;
+	--black: #222222;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* announcement bar */
+
+.announcement-bar {
+	background: #222222;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+.currecy-switcher select {
+	background: white;
+	border: 0;
+	padding: 4px 10px;
+}
+
+.announcement-bar .announcement-text {
+	color: var(--white);
+	font-size: 12px;
+	font-weight: 700;
+	word-wrap: break-word;
+}
+
+.announcement-bar .order-signin-links {
+	color: var(--white);
+}
+
+.announcement-bar .order-signin-links span a {
+	font-size: 12px;
+	color: var(--white);
+	font-weight: 700;
+	text-decoration: underline;
+	word-wrap: break-word
+}
+
+/* end of announcement bar */
+
+.header {
+	padding: 20px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.header .main-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.header .main-menu ul li {
+	display: inline-block;
+}
+
+.header .main-menu ul li:not(:first-child) {
+	margin-left: 20px;
+}
+
+.header .main-menu ul li a {
+	color: #222;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header-logo {
+	text-align: center;
+}
+
+.search-cart-icon {
+	text-align: right;
+	cursor: pointer;
+}
+
+.main-menu,
+.header-logo,
+.search-cart-icon {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.header-logo a img {
+	max-width: 110px;
+}
+
+.search-cart-icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+/* benner section */
+.banner-section {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* align-items: center; */
+	height: 650px;
+}
+
+.text-area {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 20px;
+	width: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background: #F4F3EE;
+}
+
+.text-area .text-with-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	gap: 1rem;
+	text-align: center;
+}
+
+.text-area .text-with-button h1 {
+	color: #222;
+	font-size: 46px;
+	font-weight: 700;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.text-area .text-with-button p {
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.text-area .text-with-button button {
+	background: #D09949 !important;
+	color: var(--white) !important;
+}
+
+.image-slider {
+	width: 70% !important;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	height: 650px;
+	/* Make the position relative for the absolute positioning of arrows */
+}
+
+/* Style your button, h2, and p elements as needed */
+button {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Customize the styling for your image slider */
+.slick-slider {
+	width: 100%;
+}
+
+.slick-slide img {
+	width: 100%;
+	height: 650px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+/* Custom navigation arrows */
+.custom-prev,
+.custom-next {
+	font-size: 24px;
+	color: var(--black);
+	background-color: #fff;
+	border: none;
+	padding: 2px 10px;
+	position: absolute;
+	bottom: 17px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.custom-prev {
+	right: 46px;
+}
+
+.custom-next {
+	right: 18px;
+}
+
+/* new arrival section */
+.new-arrival-section,
+.instafeed-section {
+	padding: 0px 15px;
+}
+
+.new-arrival-section h1,
+.instafeed-section h1 {
+	color: var(--black);
+	font-size: 46px;
+	font-weight: 700;
+	word-wrap: break-word;
+	text-align: center;
+	text-transform: capitalize;
+	margin: 20px 0px;
+}
+
+.products,
+.insta-items {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.new-arrival-section .products .product-img {
+	background: #FBFAF9;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.new-arrival-section .products .product-item img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	-o-object-fit: contain;
+	object-fit: contain;
+	mix-blend-mode: darken;
+	height: auto;
+}
+
+.new-arrival-section .title-with-price {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.new-arrival-section .title-with-price .title,
+.mens-outerwear-section .right-area .title-with-price .title {
+	color: var(--black);
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	word-wrap: break-word;
+}
+
+.new-arrival-section .title-with-price .excerpt,
+.new-arrival-section .title-with-price .price,
+.mens-outerwear-section .right-area .title-with-price .price,
+.mens-outerwear-section .right-area .title-with-price .excerpt {
+	color: var(--black);
+	font-size: 15px;
+	font-weight: 400;
+	word-wrap: break-word;
+	text-transform: capitalize;
+}
+
+.new-arrival-section .title-with-price .price,
+.mens-outerwear-section .right-area .title-with-price .price {
+	color: #A86A12;
+}
+
+/* end of new arrival */
+
+/* instafeed */
+.instafeed-section p {
+	color: var(--black);
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.insta-items img {
+	height: auto;
+	width: 100%;
+	aspect-ratio: 1/1;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.insta-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+/* men's outerwear section */
+.mens-outerwear-section {
+	padding: 20px 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	gap: 2rem;
+	height: 650px;
+}
+
+.mens-outerwear-section .right-area {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.mens-outerwear-section .right-area {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background: #EEF2F4;
+	height: 650px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.mens-outerwear-section .right-area .product-item {
+	padding: 1rem 0px;
+}
+
+.mens-outerwear-section .left-area {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	height: 650px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+}
+
+.mens-outerwear-section .left-area .text-with-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+}
+
+.mens-outerwear-section .right-area .product-img {
+	background: var(--white);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.mens-outerwear-section .right-area .product-item img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	-o-object-fit: contain;
+	object-fit: contain;
+	mix-blend-mode: darken;
+}
+
+.mens-outerwear-section .right-area .title-with-price {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.mens-outerwear-section .right-area::-webkit-scrollbar {
+	width: 8px;
+}
+
+.mens-outerwear-section .right-area {
+	scrollbar-width: thin;
+	scrollbar-color: #979797;
+}
+
+/* Track */
+/* .mens-outerwear-section .right-area::-webkit-scrollbar-track {
+	background: #31263E;
+	opacity: 0.3;
+	box-shadow: 0px 2px 2px rgba(49, 38, 62, 0.2);
+	border-radius: 6px;
+} */
+
+/* Handle */
+.mens-outerwear-section .right-area::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #979797;
+}
+
+
+/* preformace section */
+.performace-app-section {
+	margin: 15px 15px;
+	height: 650px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.performace-app-section .text-with-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	gap: 1rem;
+	text-align: center;
+}
+
+.performace-app-section .text-with-button p,
+.mens-outerwear-section .text-with-button p {
+	color: white;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.performace-app-section .text-with-button h1,
+.mens-outerwear-section .text-with-button h1 {
+	color: white;
+	font-size: 46px;
+	font-weight: 700;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.performace-app-section button,
+.mens-outerwear-section button,
+.text-area .text-with-button button {
+	color: var(--black);
+	font-size: 14px;
+	text-transform: uppercase;
+	word-wrap: break-word;
+	border: 0px;
+	padding: 15px 20px;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	background: var(--white);
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+/* shipping information */
+.shipping-information-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	padding: 30px 15px;
+	gap: 1rem;
+}
+
+.shipping-information-section div img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	height: 90px;
+	-o-object-fit: contain;
+	object-fit: contain;
+	mix-blend-mode: color-burn;
+}
+
+.shipping-information-section div p {
+	text-align: center;
+	color: var(--black);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 24px;
+	word-wrap: break-word;
+	padding: 0;
+	margin: 0;
+}
+
+.shipping-information-section div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+/* footer */
+.footer {
+	background: #F5F4F3;
+	margin-top: 2rem;
+}
+
+.footer-main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.footer-main .footer-widget ul {
+	margin-top: 18px;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.footer-main .footer-widget h3 {
+	color: var(--black);
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	word-wrap: break-word;
+}
+
+.footer-widget form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 10px;
+	width: 90%;
+	margin-top: 10px;
+}
+
+.footer-widget form input[type="email"] {
+	height: 35px;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	border: none;
+	border-bottom: 1px solid #222;
+	background: #FFF;
+	padding: 0 6px;
+	margin: 0;
+}
+
+.footer-widget form button {
+	height: 35px;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	background: #222;
+	text-transform: uppercase;
+	color: var(--white);
+	border: 0px;
+	cursor: pointer;
+}
+
+.footer-widget ul li a {
+	color: #514E4E;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 32px;
+	word-wrap: break-word;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.footer-main .footer-widget {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 100%;
+	padding-bottom: 18px;
+}
+
+.footer-area {
+	padding: 20px 20px;
+}
+
+.footer-widget div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 12px;
+}
+
+.footer-widget p {
+	color: #514E4E;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 23px;
+	word-wrap: break-word;
+	margin-top: 23px;
+}
+
+.footer-widget div span {
+	color: #514E4E;
+	font-size: 15px;
+	line-height: 23px;
+	word-wrap: break-word
+}
+
+.footer-widget div span:nth-child(1) {
+	font-weight: 700;
+}
+
+.footer-widget div span:nth-child(2) {
+	font-weight: 500;
+}
+
+.footer .copyright div {
+	color: #514E4E;
+	font-size: 15px;
+	font-weight: 500;
+	word-wrap: break-word;
+	padding-top: 15px;
+	text-align: center;
+	border-top: 1px #827C78 solid;
+}
+
+.footer .copyright div a {
+	color: #514E4E;
+}
+
+/* responsine */
+
+@media (max-width: 580px) {
+	.announcement-bar {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		gap: 4px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.products,
+	.insta-items {
+		-ms-grid-columns: 1fr 1rem 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footer-main {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		gap: unset;
+	}
+
+	.shipping-information-section {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.mens-outerwear-section .right-area .product-item {
+		padding: 1rem 4rem;
+	}
+
+	.mens-outerwear-section {
+		-webkit-box-align: unset;
+		-ms-flex-align: unset;
+		align-items: unset;
+		-webkit-box-pack: unset;
+		-ms-flex-pack: unset;
+		justify-content: unset;
+		gap: 1rem;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.new-arrival-section h1,
+	.instafeed-section h1,
+	.performace-app-section .text-with-button h1,
+	.mens-outerwear-section .text-with-button h1 {
+		font-size: 30px;
+	}
+
+	.slick-slide img {
+		width: 100%;
+		height: 400px;
+	}
+
+	.text-area {
+		display: none;
+	}
+
+	.image-slider {
+		width: 100% !important;
+	}
+
+	.banner-section {
+		height: 400px;
+	}
+
+	.header-logo {
+		text-align: left;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.performace-app-section {
+		height: 400px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+	.footer-widget form {
+		width: 100%;
+	}
+
+	.performace-app-section .text-with-button p,
+	.mens-outerwear-section .text-with-button p,
+	.instafeed-section p {
+		font-size: 10px;
+	}
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.footer-widget form {
+		width: 50%;
+	}
+
+	.performace-app-section .text-with-button p,
+	.mens-outerwear-section .text-with-button p,
+	.instafeed-section p {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.mens-outerwear-section .right-area .product-item {
+		padding: 1rem 4rem;
+	}
+
+	.header .main-menu ul li:not(:first-child) {
+		margin-left: 6px;
+	}
+}

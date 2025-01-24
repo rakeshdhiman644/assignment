@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Assignment</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+	<!-- header -->
+	<div class="announcement-bar">
+		<div class="currecy-switcher">
+			<select>
+				<option value="USD">USD</option>
+				<option value="AUS">AUS</option>
+				<option value="INR">INR</option>
+			</select>
+		</div>
+		<div class="announcement-text">Shop happy with free shipping and easy returns for 30 days
+		</div>
+		<div class="order-signin-links">
+			<span>
+				<a href="#">Your Orders</a> | <a href="#">Sign In</a>
+			</span>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="main-menu">
+			<ul>
+				<li><a href="#">Designers</a></li>
+				<li><a href="#">Men</a></li>
+				<li><a href="#">Women</a></li>
+				<li><a href="#" style="color: #F00;">Sales</a></li>
+			</ul>
+		</div>
+
+		<div class="header-logo">
+			<a href="#">
+				<img src="img/logo.png" alt="logo">
+			</a>
+		</div>
+
+		<div class="search-cart-icon">
+			<div>
+				<img src="img/search.png">
+			</div>
+			<div>
+				<img src="img/cart.png">
+			</div>
+		</div>
+	</header>
+
+
+	<!-- banner section -->
+	<section class="banner-section">
+		<div class="text-area">
+			<div class="text-with-button">
+				<h1>Sustainable Bags</h2>
+					<p>Need it? Don’t wait</p>
+					<a href="#"><button>Shop Party Bags</button></a>
+			</div>
+		</div>
+		<div class="image-slider">
+			<div><img src="img/banner-img.png" alt="Image 1"></div>
+			<div><img src="img/banner-img.png" alt="Image 2"></div>
+			<div><img src="img/banner-img.png" alt="Image 3"></div>
+			<!-- Add more slides as needed -->
+		</div>
+		<!-- Custom navigation arrows -->
+		<button class="custom-prev" onclick="prevSlide()">‹</button>
+		<button class="custom-next" onclick="nextSlide()">›</button>
+	</section>
+
+	<!-- new arrival -->
+	<div class="new-arrival-section">
+		<h1>new arrivals</h1>
+
+		<div class="products">
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image1.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">OLIVE - Signature Heather Extra Small Crossbody</span>
+					<span class="price">₹31,000.00</span>
+				</div>
+			</div>
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image2.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">OLIVE - Signature Heather Extra Small Crossbody</span>
+					<span class="price">₹32,000.00</span>
+				</div>
+			</div>
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image3.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">Pearl Convertible Flap Shoulder Bag</span>
+					<span class="price">₹21,000.00</span>
+				</div>
+			</div>
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image4.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">Pearl Convertible Flap Shoulder Bag</span>
+					<span class="price">₹19,000.00</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- men's outerwear section -->
+	<div class="mens-outerwear-section">
+		<div class="left-area" style="background-image: url(img/business-handsome-man.png);">
+			<div class="text-with-button">
+				<h1>Men's Outerwear</h1>
+				<p>Feel super soft coat for the season</p>
+				<a href="#"><button>Shop Coats</button></a>
+			</div>
+		</div>
+		<div class="right-area">
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image5.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">Pearl Convertible Flap Shoulder Bag</span>
+					<span class="price">₹19,000.00</span>
+				</div>
+			</div>
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image5.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">Pearl Convertible Flap Shoulder Bag</span>
+					<span class="price">₹19,000.00</span>
+				</div>
+			</div>
+
+			<div class="product-item">
+				<div class="product-img">
+					<img src="img/image5.png" alt="item1">
+				</div>
+				<div class="title-with-price">
+					<span class="title">MICHAEL MICHAEL KORS</span>
+					<span class="excerpt">Pearl Convertible Flap Shoulder Bag</span>
+					<span class="price">₹19,000.00</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- performace section -->
+	<div class="performace-app-section" style="background-image: url(img/Rectangle20.png);">
+		<div class="text-with-button">
+			<p>RUN LIGHTWEIGHT</p>
+			<h1>Performance apparel designed to move with you</h1>
+			<a href="#"><button>See All Products</button></a>
+		</div>
+	</div>
+
+
+	<!-- shipping information section -->
+	<div class="shipping-information-section">
+		<div>
+			<img src="img/organic-product.png" alt="delivered">
+			<p>Made from<br />Eco-Friendly Materials</p>
+		</div>
+		<div>
+			<img src="img/shipped1.png" alt="delivered">
+			<p>Free<br />Shipping</p>
+		</div>
+		<div>
+			<img src="img/delivery-status.png" alt="delivered">
+			<p>Easy<br />30 Days Return</p>
+		</div>
+		<div>
+			<img src="img/guarantee1.png" alt="delivered">
+			<p>Satisfaction<br />Guarantee</p>
+		</div>
+	</div>
+
+	<!-- instafeed -->
+	<div class="instafeed-section">
+		<h1>@instagram Feeds</h1>
+		<p>Move. Connect. Enjoy</p>
+
+		<div class="insta-items">
+
+			<div class="insta-item">
+				<img src="img/insta1.png" alt="item1">
+			</div>
+
+			<div class="insta-item">
+				<img src="img/insta2.png" alt="item1">
+			</div>
+
+			<div class="insta-item">
+				<img src="img/insta3.png" alt="item1">
+			</div>
+
+			<div class="insta-item">
+				<img src="img/insta4.png" alt="item1">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer-area">
+
+			<div class="footer-main">
+
+				<div class="footer-widget">
+					<h3>Subscribe</h3>
+					<p>Sign up for latest updates</p>
+					<form>
+						<input type="email" placeholder="Email" required />
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
+
+				<div class="footer-widget">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">bags</a></li>
+						<li><a href="#">coats</a></li>
+						<li><a href="#">shirts</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-widget">
+					<h3>Customer Service</h3>
+					<ul>
+						<li><a href="#">shipping & returns</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">contact us</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-widget">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="#">facebook</a></li>
+						<li><a href="#">twitter</a></li>
+						<li><a href="#">instagram</a></li>
+						<li><a href="#">youTube</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-widget">
+					<h3>Need Help?</h3>
+					<div>
+						<span>Call Us</span>
+						<span>+x xxx-xxx-xxxx</span>
+					</div>
+					<div>
+						<span>Email Us</span>
+						<span>support@domain.com</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="copyright">
+				<div>© <span id="year"></span> <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
