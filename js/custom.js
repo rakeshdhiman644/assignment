@@ -1,11 +1,11 @@
 
 $(document).ready(function () {
 	$('.image-slider').slick({
-				dots: false, // Add navigation dots if desired
-				arrows: false, // Disable default slick slider arrows
-				autoplay: false, // Set to true for autoplay
-				autoplaySpeed: 2000 // Set the speed of autoplay
-			});
+		dots: false,
+		arrows: false,
+		autoplay: false,
+		autoplaySpeed: 2000
+	});
 });
 
 function prevSlide() {
