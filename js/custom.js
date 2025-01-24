@@ -8,7 +8,6 @@ $(document).ready(function () {
 			});
 });
 
-		// Custom slide navigation functions
 function prevSlide() {
 	$('.image-slider').slick('slickPrev');
 }
